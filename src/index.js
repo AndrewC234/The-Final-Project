@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Navbar from "./components/Navbar";
-import MembershipPage from "./pages/Membership";
+import Membership from "./pages/Membership";
 
 export default function App() {   
     return(
@@ -15,7 +15,7 @@ export default function App() {
                 <Routes>
                   <Route path="/about" element={<About />} />
                   <Route path="/" element={<Home />} />
-                  <Route path="/membership" element={<MembershipPage/>} />
+                  <Route path="/membership" element={<Membership/>} />
                 </Routes>
               </div>
             </Router>

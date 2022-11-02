@@ -1,58 +1,12 @@
-import React, { useEffect , Component } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { push } from 'redux-first-history';
-import R from 'ramda';
+import React, { Component } from "react";
+import Navbar from "../components/Navbar.js";
 
-export default function MembershipPage() {
-    const dispatch = useDispatch();
-    const { user } = useSelector(R.pick(['user']));
-  
-    useEffect(() => {
-      if (!R.isEmpty(user)) {
-        dispatch(push('/home'));
-      }
-    }, [dispatch, user]);
-
-    const [form, setForm] = useState({
-        Membership: ""
-      });
-      const navigate = useNavigate();
-      
-      // These methods will update the state properties.
-      function updateForm(value) {
-        return setForm((prev) => {
-          return { ...prev, ...value };
-        });
-      }
-      
-      // This function will handle the submission.
-      async function onSubmit(e) {
-        e.preventDefault();
-      
-        // When a post request is sent to the create url, we'll add a new record to the database.
-        const newPerson = { ...form };
-      
-        await fetch("http://localhost:5000/members/add", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(newPerson),
-        })
-        .catch(error => {
-          window.alert(error);
-          return;
-        });
-      
-        setForm({ Membership: "" });
-        navigate("/");
-      }
-
-    return(
-        <div className='Membership-page page'>
-            <Membership/>
-            <div class="container mem">
-            <div >
+class Membership extends Component {
+    render() {
+      return (
+        <div>      
+          <div className="container">
+          <div >
                 <h2>Select the plan that is perfect for you today! </h2>
                 <h2>In & Out</h2>
                 <h4 class="pricer">$12.45</h4>
@@ -128,7 +82,12 @@ export default function MembershipPage() {
                 </div>
                 <input class="btn btn-primary " type="submit" value="Continue to payment" onSubmit={onSubmit} route="./payment"/>
             </div>
+          </div>
         </div>
-        </div>
-    )
-}
+      );
+    }
+  }
+
+  
+  export default Membership;
+  
