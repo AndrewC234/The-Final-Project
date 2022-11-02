@@ -22,6 +22,11 @@ class Navbar extends Component {
                 About
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/membership">
+                Membership
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
