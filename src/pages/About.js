@@ -7,7 +7,7 @@ class About extends Component {
       <div>
    
         <div className="container">
-          <h2>About</h2>
+          <h2>About Jerald Mason</h2>
           
           <p>
             Maecenas dapibus, est posuere eleifend rutrum, lectus ligula gravida
