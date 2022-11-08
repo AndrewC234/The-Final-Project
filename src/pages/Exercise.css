@@ -1,0 +1,68 @@
+body{
+    background-color: #62FF27;
+}
+
+.body{
+    background-color: #5E6967;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titleExcercise{
+    background-color: #5E6967;
+}
+
+
+.upper{
+    background-color: #5E6967;
+    width: auto;
+    height:auto;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    justify-content: center; 
+}
+
+.lower{
+    background-color: #5E6967;
+    width: auto;
+    height:auto;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    justify-content: center;
+}
+
+.core{
+    background-color: #5E6967;
+    width: auto;
+    height:auto;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    justify-content: center;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+h3{
+    background-color: #5E6967;
+    font-size: 30px;
+
+}
+
+.exerPhoto{
+    width: 250px;
+    height: 250px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}

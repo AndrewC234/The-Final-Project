@@ -1,50 +1,70 @@
 import React, { Component } from "react";
-import "./style.css"
+import Navbar from "../components/Navbar.js";
+import './Home.css';
+
 
 
 class Home extends Component {
   render() {
     return (
       <div>
-    
+        <Navbar />
         <div className="container">
-          <h2>Welcome</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            placerat orci eu nulla sagittis, pulvinar dignissim lectus
-            consequat. Etiam in lobortis ligula, vitae ornare lacus. Vivamus
-            scelerisque lorem arcu, vitae eleifend ex commodo a. Quisque rutrum,
-            augue sit amet egestas efficitur, magna nulla lacinia elit, sed
-            suscipit tortor erat vitae enim. Donec egestas odio id aliquet
-            rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et
-            ultrices posuere cubilia Curae; Quisque mi dolor, egestas nec
-            lacinia non, sodales eu lacus. Donec ultricies nec elit ac ornare.
-            Quisque fermentum ligula ut feugiat cursus. Aliquam auctor suscipit
-            ex a lacinia. Mauris sollicitudin, justo quis fringilla finibus, dui
-            diam ullamcorper nulla, sit amet placerat justo neque quis quam.
-            Praesent nec nibh at tortor ornare dignissim. Morbi tincidunt
-            fringilla turpis at luctus. Vivamus dapibus ligula eget pellentesque
-            luctus. Maecenas ut consectetur lacus, non dignissim nisi. Praesent
-            sodales tellus sit amet faucibus tempus.
-          </p>
-          <p>
-            Maecenas dapibus, est posuere eleifend rutrum, lectus ligula gravida
-            urna, at pretium dui turpis non lorem. Donec pretium lorem ipsum, at
-            fermentum nibh consequat facilisis. Sed maximus massa est, vel porta
-            diam placerat id. Vivamus imperdiet lorem eget dolor bibendum, eget
-            gravida tellus interdum. Sed lectus odio, condimentum eu porttitor
-            vel, euismod sit amet urna. Nam quis dui a nibh rhoncus aliquam
-            vitae in metus. Nam sit amet semper turpis. Suspendisse eu malesuada
-            tortor, vel lacinia nisl. Phasellus ultrices vehicula magna, sed
-            tempor neque dapibus quis. Phasellus urna justo, sollicitudin ac
-            odio eget, convallis varius nulla. Vivamus in lacinia lorem, at
-            eleifend nulla. Nulla nec luctus purus. Integer id purus mauris.
-            Phasellus finibus ultricies erat a tempus. Nulla luctus sem nec
-            justo venenatis, eu faucibus purus congue.
-          </p>
+
+        <div class = "body">
+
+          <div class = "titleHome">
+                  <h1>Fortune Fitness</h1>
+          </div>
+
+              <div class = "photoSummary">
+                  <div class = "photo">
+                      <img src="/images/Main Home Photo.jpg" />
+                  </div>
+                  <div class = "summary">
+                      <p>
+                          Here at fitness fortune OUR goal is to help you reach YOUR goals any way we can. With our large and ever growing community we hope that you are 
+                          able to find activities and people that you enjoy. With our wide variety of equipment and trainer knowledge we know you will be fortunate to have joined us!
+                      </p>
+                  </div>
+              </div>
+
+              <div class = "calender">
+                  <img src="/images/Week.JPG" />
+              </div>
+
+              <div class = "classes">
+
+                  <p>
+                      <b>Yoga:</b> Consists of deliberate, concentrated movements and postures designed to promote flexibility, tone and strengthen muscles, and align the body. Breathing 
+                      techniques are also focused on along with the movements allowing participants to take part in a relacing experience.
+                  </p><br />
+                  <p>
+                      <b>Pilates:</b> While Yoga focuses on strength and flexibility through long held, swift-moving postures and “grounding” positions, Pilates emphasizes core with repetitive
+                      and small movements of isolated or full body muscle groups.
+                  </p><br />
+                  <p>
+                      <b>Circuit Training:</b> Interval-style, fast paced, shorter routine as a series of exercises that complete a circuit. Complete one exercise (usually in a station) for 
+                      anywhere from 30 seconds to a minute, and then move on to the next station/exercise for another 30 seconds to a minute with a brief break once a ful circuit is complete.
+                  </p><br />
+                  <p>
+                      <b>Zumba:</b> A series of energetic dance routines that provide a great cardio exertion by mixing low intensity and high intensity moves for an interval-style, calorie 
+                      burning, dance fitness party.
+                  </p><br />
+                  <p>
+                      <b>Kickboxing:</b> A martial-arts style of fitness that provides a great cardiovascular workout and helps build endurance, coordination, tones muscles and core, all 
+                      while working the heart and burning a lot of calories. Require weighted bags and intervals of punching and kicking in a small group setting, class-style setting, or in 
+                      individual stations with weighted bags.
+                  </p><br />
+                  
+              </div>
+
+            </div> 
+
         </div>
       </div>
     );
   }
 }
+
 export default Home;

@@ -3,7 +3,7 @@ import { render } from "react-dom";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import "./styles.css";
 import Home from "./pages/Home";
-import About from "./pages/About";
+import Exercise from "./pages/Exercise";
 
 import Membership from "./pages/Membership";
 import Payment from "./pages/Payment";
@@ -15,7 +15,7 @@ export default function App() {
             <Router>
               <div>        
                 <Routes>
-                  <Route path="/about" element={<About />} />
+                  <Route path="/exercise" element={<Exercise />} />
                   <Route path="/" element={<Home />} />
                   <Route path="/membership" element={<Membership/>} />
                   <Route path="/payment" element={<Payment/>} />
