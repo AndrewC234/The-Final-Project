@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import "./style.css"
 
 class Blog extends Component{
@@ -11,7 +11,7 @@ class Blog extends Component{
             <div>Welcome to Fortune fitness's blog. If you are a work enthusiast, have questions about workouts, looking for a workout partner or trainer, or would just like to connect to fellow members you are in the right place.    </div>
             <br/>
             <div>
-            {Posts}
+            {/* {Posts} */}
             </div>
             </div>
             </div>

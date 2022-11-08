@@ -1,6 +1,5 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import "./ccstyle.css"
-import { render } from "react-dom";
 
 
 class Payment extends Component {

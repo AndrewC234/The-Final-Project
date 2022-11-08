@@ -97,4 +97,4 @@ recordRoutes.route("/:id").delete((req, response) => {
  });
 });
  
-module.exports = MembersRoutes;
+module.exports = Members;
