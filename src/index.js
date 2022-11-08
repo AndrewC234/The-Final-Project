@@ -10,8 +10,7 @@ import Membership from "./pages/Membership";
 export default function App() {   
     return(
             <Router>
-              <div>
-                <Navbar />        
+              <div>        
                 <Routes>
                   <Route path="/about" element={<About />} />
                   <Route path="/" element={<Home />} />

@@ -26,6 +26,7 @@ class Navbar extends Component {
               <Link className="nav-link" to="/membership">
                 Membership
               </Link>
+
             </li>
           </ul>
         </div>
