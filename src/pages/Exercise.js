@@ -83,6 +83,12 @@ class Exercise extends Component {
             </div>
             </div>
 
+
+
+
+
+
+
         </div>
       </div>
     );

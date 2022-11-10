@@ -1,15 +1,13 @@
 import React from "react"; 
 import { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import "./style.css"
 
 // import "./App.css";
-import Home from "../pages/Home.js";
-import Membership from "../pages/Membership.js";
+import Home from "./pages/Home.js";
 import Exercise from "./pages/Exercise.js";
-import Payment from "./pages/Payment.js";
-import Blog from "./pages/BlogHome.js";
-import Signup from "./pages/Signup";
+import Membership from "./pages/Membership.js";
+import Signup from "./pages/Signup.js";
+
 
 class App extends Component {
   render() {
@@ -19,9 +17,7 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route path="/exercise" component={Exercise} />
           <Route path="/membership" component={Membership} />
-          <Route path="/payment" component={Payment}/>
-          <Route path="/blog" component={Blog}/>
-          <Route path="/signup" component={Signup}/>
+          <Route path="/signup" component={Signup} />
         </div>
       </Router>
     );

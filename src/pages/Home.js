@@ -14,7 +14,7 @@ class Home extends Component {
         <div class = "body">
 
           <div class = "titleHome">
-                  <h1>Fortune Fitness</h1>
+                  <h1 class = "h1">Fortune Fitness</h1>
           </div>
 
               <div class = "photoSummary">
